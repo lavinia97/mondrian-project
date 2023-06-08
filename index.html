@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    
+    }
+
+    .red-square {
+      background-color:#E72F24;
+      /* width: 311px; */
+      /* height: 414px; */
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .square-1 {
+      /* width: 419px; */
+      /* height: 414px; */
+      grid-column: span 3;
+    }
+
+    .square-2 {
+      /* width: 320px; */
+      /* height: 295px; */
+      grid-row: span 2;
+      
+    }
+
+    .square-3 {
+      /* width: 360px; */
+      /* height: 295px; */
+      grid-row: span 2;
+    }
+    
+
+    .blue-square {
+      background-color: #004592;
+      /* width: 50px; */
+      /* height: 130px; */
+      border-bottom: 10px solid black;
+      grid-area: 2/4/3/5;
+    }
+
+    .square-4 {
+      /* width: 50px;
+      height: 155px; */
+      grid-area: 2/2/4/4;
+    }
+
+    .square-5 {
+      /* width: 320px;
+      height: 20px; */
+      grid-area: 4/1/5/2;
+    }
+
+    .yellow-square {
+      background-color: #F9D01E;
+      /* width: 198px;
+      height: 20px; */
+      grid-area: 4/2/5/3;
+    }
+
+    .black-square {
+      background-color: #232629;
+      /* width: 153px;
+      height: 20px; */
+      grid-area: 4/3/5/4;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 9px;
+      width: 748px;
+      height: 748px;
+      background-color: black;
+      grid-template-rows: 414px 130px 155px 22px;
+      grid-template-columns: 320px 198px 153px 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="red-square"></div>
+    <div class="white square-1"></div>
+    <div class="white square-2"></div>
+    <div class="white square-3"></div>
+    <div class="white square-4"></div>
+    <div class="white square-5"></div>
+    <div class="blue-square"></div>
+    <div class="black-square"></div>
+    <div class="yellow-square"></div>
+
+  </div>
+</body>
+
+</html>
